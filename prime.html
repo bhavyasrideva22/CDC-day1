@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prime</title>
+</head>
+<body>
+    <h1>Prime number or not</h1>
+    <script>
+        const n = prompt("Enter the nnumber : ");
+        function isPrime(n) {
+            if(n<=1)
+                return false;
+
+            for(let i=2;i<n;i++)
+                if(n % i == 0)
+                return false;
+            return true;
+        }
+        if(isPrime(n)==true)
+            document.write(n+" is a prime number");
+        else
+            document.write(n+" is not a prime number");
+    </script>
+</body>
+</html>

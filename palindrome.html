@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>palindrome</title>
+</head>
+<body>
+    <script>
+        function checkPalindrome(string)
+        {
+            const len = string.lenght;
+            for(let i=0;i<len/2;i++)
+        {
+            if(string[i]!==string[len-1-i])
+        {
+            return 'It is not a palindrome';
+        }
+        }
+        return 'It is a palindrome';
+        }
+        const string = prompt('Enter a string : ');
+        const value = checkPalindrome(string);
+        alert(value);
+    </script>
+</body>
+</html>
