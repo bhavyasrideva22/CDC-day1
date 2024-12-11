@@ -1,0 +1,6 @@
+const os =require('os')
+console.log(os.arch())
+console.log(os.version())
+console.log(os.tmpdir())
+console.log(__dirname)
+console.log(__filename)
